@@ -14,6 +14,7 @@ class LogWriter(object):
 		#1
 		# return every second element (counting from index 1) from passed list 
 		# e.g. get_every_second_element([1,2,3,4]) == [2,4]
+	
 		pass
 
 	@staticmethod
@@ -29,12 +30,22 @@ class LogWriter(object):
 	def insert_data_in_text(text, data):
 		#3
 		#Find the occurance of word "list" in text (str).
+		words= text.split()
+		a=''
+		for word in words:
+			a+=word+' '
+			if word='list':
+				a+=' ('+str(data)+') '
+		return a
+		
 		#Assume that word "list" does not repeat in text.
+		
 		#And put string form of data (str(data)) after that occurance.
 		#String form of data should be surrounded with parentheses "()".
 		#
 		#e.g:
 		# insert_data_in_text("AAAA list BBBB", [1,2,3]) = "AAAA list ([1, 2, 3]) BBBB"
+		
 		pass
 
 	@staticmethod
