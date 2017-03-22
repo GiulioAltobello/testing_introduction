@@ -34,7 +34,7 @@ class LogWriter(object):
 		a=''
 		for word in words:
 			a+=word+' '
-			if word='list':
+			if word=='list':
 				a+=' ('+str(data)+') '
 		return a
 		
