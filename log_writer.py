@@ -75,6 +75,8 @@ class LogWriter(object):
 	def get_second_word(text):
 		#9
 		# Return the second word of text
+		words=text.split()
+		return words[2]
 		pass
 
 	def o_count_is_even(self):
